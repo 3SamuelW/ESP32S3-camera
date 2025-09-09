@@ -1,4 +1,4 @@
-# ESP32S3-CAM [![zh-CN](https://img.shields.io/badge/lang-zh--CN-green.svg)](README.zh-CN.md) [![fr](https://img.shields.io/badge/lang-fr-yellow.svg)](README.fr.md) [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+# ESP32S3-CAM [![zh-CN](https://img.shields.io/badge/lang-zh--CN-green.svg)](readme.zh-CN.md) [![fr](https://img.shields.io/badge/lang-fr-yellow.svg)](readme.fr.md) [![en](https://img.shields.io/badge/lang-en-red.svg)](readme.md)
 
 
 [![Release](https://img.shields.io/github/v/release/3SamuelW/ESP32S3-camera?display_name=tag)](https://github.com/3SamuelW/ESP32S3-camera/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![PlatformIO](https://img.shields.io/badge/PlatformIO-ESP32--S3-orange)](https://platformio.org/) [![Last commit](https://img.shields.io/github/last-commit/3SamuelW/ESP32S3-camera)](https://github.com/3SamuelW/ESP32S3-camera/commits/main) [![GitHub stars](https://img.shields.io/github/stars/3SamuelW/ESP32S3-camera?style=social)](https://github.com/3SamuelW/ESP32S3-camera/stargazers)
