@@ -19,14 +19,14 @@
 
 ## Table des matières
 
-- [Prérequis](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#prérequis)
-- [Structure du projet](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#structure-du-projet)
-- [Démarrage rapide (build & upload)](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#démarrage-rapide-build--upload)
-- [Moniteur série](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#moniteur-série)
-- [Fichiers matériel & Releases](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#fichiers-matériel--releases)
-- [Notes de développement](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#notes-de-développement)
-- [Contribuer](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#contribuer)
-- [Licence](https://claude.ai/chat/28219a8d-7a73-4137-866f-85d5bd78dcbb#licence)
+- [Prérequis](#prérequis)
+- [Structure du projet](#structure-du-projet)
+- [Démarrage rapide (build & upload)](#démarrage-rapide-build--upload)
+- [Moniteur série](#moniteur-serie)
+- [Fichiers matériel & Releases](#fichiers-materiel--releases)
+- [Notes de développement](#notes-de-developpement)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
 
 ------
 
