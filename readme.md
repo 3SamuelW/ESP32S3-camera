@@ -1,26 +1,19 @@
-# ESP32S3-CAM
+# ESP32S3-CAM [![zh-CN](https://img.shields.io/badge/lang-zh--CN-green.svg)](README.zh-CN.md) [![fr](https://img.shields.io/badge/lang-fr-yellow.svg)](README.fr.md) [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 
-[![版本](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](https://github.com/你的仓库/releases) [![License](https://img.shields.io/github/license/3SamuelW/ESP32S3-camera)](https://github.com/3SamuelW/ESP32S3-camera/blob/main/LICENSE) [![Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/3SamuelW/ESP32S3-camera/actions) [![PlatformIO](https://img.shields.io/badge/PlatformIO-ESP32--S3-orange)](https://platformio.org/boards/espressif32/esp32-s3-devkitc-1)
 
----
-
-**🌐 Language / Langue / 语言** 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md) [![fr](https://img.shields.io/badge/lang-fr-yellow.svg)](README.fr.md) [![zh-CN](https://img.shields.io/badge/lang-zh--CN-green.svg)](README.zh-CN.md)
+[![Release](https://img.shields.io/github/v/release/3SamuelW/ESP32S3-camera?display_name=tag)](https://github.com/3SamuelW/ESP32S3-camera/releases) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![PlatformIO](https://img.shields.io/badge/PlatformIO-ESP32--S3-orange)](https://platformio.org/) [![Last commit](https://img.shields.io/github/last-commit/3SamuelW/ESP32S3-camera)](https://github.com/3SamuelW/ESP32S3-camera/commits/main) [![GitHub stars](https://img.shields.io/github/stars/3SamuelW/ESP32S3-camera?style=social)](https://github.com/3SamuelW/ESP32S3-camera/stargazers)
 
 ---
 
-***ESP32S3-CAM*** — a hardware + software project that runs on an ESP32-S3 development board with a camera and display.
-
-This repository contains the PCB design files (Altium + Gerber/BOM) and the firmware (`PlatformIO` / `Arduino`) for the project.
+***ESP32S3-CAM*** — a hardware + software project that runs on an ESP32-S3 development board with a camera and display. This repository contains the PCB design files (Altium + Gerber/BOM) and the firmware (`PlatformIO` / `Arduino`) for the project.
 
 ---
 
 ## Quick summary
 
 - **Hardware**: Altium schematic and PCB (`hardware/Altium_Designer`), BOM and Gerber (`hardware/LCEDA`).
-- **Software**: PlatformIO-based firmware under `software/`. Main project environment is `esp32-s3-devkitc-1`.
+- **Software**: PlatformIO-based firmware under `ESP32S3-CAM/`. Main project environment is `esp32-s3-devkitc-1`.
 - **Build system**: PlatformIO (uses `espressif32` platform, `arduino` framework).
-- **Note**: Build artifacts (e.g. `.pio/`) and large binaries (Gerber zip, yields) should **not** be stored in Git history. Put large deliverables in GitHub Releases.
 
 ---
 
@@ -44,12 +37,12 @@ This repository contains the PCB design files (Altium + Gerber/BOM) and the firm
   or PlatformIO Core (CLI) installed (`pip install -U platformio` or use the official installers)
 - ESP32-S3 development board (compatible with `esp32-s3-devkitc-1`)
 - USB cable and appropriate serial drivers
-- (Optional) SSH key or GitHub credentials for pushing
 
 ---
 
 ## Project structure
 
+```
 ESP32S3-CAM/
 ├─ platformio.ini 
 ├─ convert.py
@@ -65,6 +58,7 @@ ESP32S3-CAM/
 │ ├─ image.h
 │ ├─ config.h
 └─ README.md
+```
 
 ---
 
@@ -83,11 +77,11 @@ ESP32S3-CAM/
 
 ### Using PlatformIO CLI
 
-From the `software/` folder:
+From the `ESP32S3-CAM/` folder:
 
 ```bash
 # build
-cd software
+cd ESP32S3-CAM
 pio run -e esp32-s3-devkitc-1
 
 # upload (will use upload_port from platformio.ini unless you override)
@@ -101,6 +95,8 @@ pio run -e esp32-s3-devkitc-1 -t upload --upload-port COM3
 - **Upload fails**: check `upload_port` and drivers, try a different USB cable, use `pio run -e esp32-s3-devkitc-1 -t upload --upload-port <your-port>`.
 - **Missing libraries**: PlatformIO will download `lib_deps`. If network blocked, install libraries manually via PlatformIO or put them in `lib/`.
 
+---
+
 ## Serial monitor
 
 Default baud rate in `platformio.ini`: `monitor_speed = 115200`
@@ -113,6 +109,9 @@ pio device monitor -p COM9 -b 115200
 # or
 pio device monitor --port COM3 --baud 115200
 ```
+
+---
+
 ## Hardware files & Releases
 
 - **PCB design (Altium)**: hardware/Altium_Designer/
@@ -121,11 +120,15 @@ pio device monitor --port COM3 --baud 115200
 
 > [Download hardware materials](https://github.com/3SamuelW/ESP32S3-camera/releases/download/v1.0/hardware.zip)
 
+---
+
 ## Development notes
 
 - PlatformIO environment: `esp32-s3-devkitc-1` (see `platformio.ini`)
 - PSRAM is enabled in the config (`board_build.psram = true` and `-DBOARD_HAS_PSRAM`).
 - Libraries defined in `lib_deps` will be automatically installed by PlatformIO during build (e.g. `TFT_eSPI`, `TJpg_Decoder`).
+
+---
 
 ## Contributing
 
@@ -133,7 +136,9 @@ pio device monitor --port COM3 --baud 115200
 - Keep commits small and focused.
 - Open a pull request describing your changes.
 
-> If you change board wiring or camera model, update `README.md` and `software/config.h` accordingly.
+> If you change board wiring or camera model, update `README.md` and `ESP32S3-CAM/config.h` accordingly.
+
+---
 
 ## License
 
