@@ -142,7 +142,7 @@ pio device monitor --port COM3 --baud 115200
 
 ## License
 
-Add a LICENSE file to the repo (e.g. MIT) if you intend to open-source the project. If unsure, choose an OSI-approved permissive license such as MIT.
+Add a LICENSE file to the repo (e.g. MIT) if you intend to open-source the project! If unsure, choose an OSI-approved permissive license such as MIT.
 
 Contact / Maintainer
 Maintainer: 3SamuelW / [3samuelw@gmail.com](mailto:3samuelw@gmail.com)

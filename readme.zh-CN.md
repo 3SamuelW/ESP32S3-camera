@@ -143,7 +143,7 @@ pio device monitor --port COM3 --baud 115200
 
 ## 许可证
 
-如果你打算开源项目，请在仓库中添加LICENSE文件（如MIT）。如果不确定，选择OSI批准的宽松许可证，如MIT。
+如果你打算开源项目，请在仓库中添加LICENSE文件。如果不确定，选择OSI批准的宽松许可证，如MIT。
 
 ---
 
